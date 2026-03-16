@@ -1,0 +1,100 @@
+
+    body {
+        background-color:#fbfbfb;
+    }
+    .hero {
+        background-image: url('assets/images/hero.jpg'); /* Hình ảnh bìa */
+        background-size: cover;
+        background-position: center;
+        height: 250px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #22177A;
+    }
+    .hero p {
+        font-size: 1.5rem;
+        color: #22177A;
+    }
+    .card {
+        transition: transform 0.2s;
+        height: 100%; /* Đảm bảo chiều cao card là 100% */
+        box-shadow: 0 3px 3px rgb(210, 209, 209);
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column; /* Đặt chiều dọc cho nội dung */
+        justify-content: space-between; /* Căn chỉnh nội dung */
+        height: 100%; /* Đảm bảo chiều cao card-body là 100% */
+    }
+    .card-text {
+        flex-grow: 1; /* Cho phép mô tả chiếm không gian còn lại */
+    }
+    .card-img-top {
+        width: 100%; /* Đặt chiều rộng hình ảnh là 100% */
+        height: 300px; /* Đặt chiều cao cố định cho hình ảnh */
+        object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+    }
+    .header__notify {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background-color: white;
+        border: 1px solid #ccc;
+        z-index: 1000; /* Đảm bảo thông báo nằm trên các phần khác */
+    }
+    .header__navbar-list {
+        display: flex;
+        align-items: center; /* Căn giữa theo chiều dọc */
+        list-style: none; /* Bỏ dấu chấm đầu dòng */
+        padding: 0; /* Bỏ padding */
+        margin: 0; /* Bỏ margin */
+    }
+    
+    .header__navbar-item {
+        margin-right: 15px; /* Khoảng cách giữa các mục */
+    }
+    
+    .header__navbar-icon-link {
+        display: flex;
+        align-items: center; /* Căn giữa biểu tượng và văn bản */
+        text-decoration: none; /* Bỏ gạch chân */
+        color: inherit; /* Kế thừa màu sắc */
+    }
+    
+    .header__navbar-icon {
+        margin-right: 5px; /* Khoảng cách giữa biểu tượng và văn bản */
+    }
+    .header__search .header__search-input-wrap .btn{
+        float:right;
+    }
+    .header__search .header__search-input-wrap .form-control{
+        float: left;
+    }
+    .btn .badge {
+        position: relative;
+        top: -9px;
+        left: -8px;
+    }
+    .col-md-4{
+        margin-top: 30px;
+        
+    }
+    .phu {
+        font-size: 40px;
+        font-weight: 700;
+        font-family: sans-serif;
+    }
+    .form-control.d-inline-block{
+        font-size: 14px;
+        font-weight: 400;
+    }
